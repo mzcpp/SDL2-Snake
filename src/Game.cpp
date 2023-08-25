@@ -139,6 +139,7 @@ bool Game::InitInfoTextures()
 	if (font_ == nullptr)
 	{
 		printf("Failed to load font! SDL_ttf Error: %s\n", TTF_GetError());
+		return false;
 	}
 
 	SDL_Color text_color = { 0xFF, 0x00, 0x00, 0xFF };
